@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main div{
+            height: 100px;
+            width: 80px;
+            background: rgb(66, 33, 255);
+            margin: 5px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .main{
+            height: 800px;
+            width: 620px;
+            border: 1px solid red;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main div:nth-child(3){
+            /* flex-grow: 2;} */}
+        .main div:nth-child(3){
+            flex-basis: 30%;
+            align-self: end;
+
+        }
+     
+    </style>
+</head>
+<body>
+   <div class="main">
+       <div>Item-1</div>
+       <div>Item-2</div>
+       <div>Item-3</div>
+       <div>Item-4</div>
+       <div>Item-5</div>     
+      
+   </div>
+</body>
+</html>
